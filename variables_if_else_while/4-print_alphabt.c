@@ -5,16 +5,13 @@
  * Return: 0
  */
 int main(void)
-:wq{
+{
 	char letter;
-	char LETTRE;
-
 
 	for (letter = 'a'; letter <= 'z'; letter++)
-	putchar(letter);
 
-	for (LETTRE = 'A' ; LETTRE <= 'Z'; LETTRE++)
-	putchar(LETTRE);
+	if (letter != 'q' && letter != 'e')
+		putchar(letter);
 
 	putchar('\n');
 	return (0);
