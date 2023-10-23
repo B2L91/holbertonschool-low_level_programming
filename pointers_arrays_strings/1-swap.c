@@ -5,10 +5,11 @@
  * @a: variable
  * @b: variable
  * Description: swap functions
- */ 
+ */
 void swap_int(int *a, int *b)
 {
-	int c = *a;
+int swap;
+	swap = *a;
 	*a = *b;
-	*b = c;
+	*b = swap;
 }
