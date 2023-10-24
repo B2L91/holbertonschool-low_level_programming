@@ -5,17 +5,15 @@
 /**
  * print_rev - prints a string in reverse
  * @s: read a string
- * Description: prints string reverse
+ * Return: Nothing
  */
 void print_rev(char *s)
 {
-int length = 0;
-while (s[length] != '\0')
-{
-length++;
-}
+int len = strlen(s);
 
-putchar(s[length]);
-length--;
-putchar(10);
+while (len--)
+
+	putchar(*(s + len));
+
+putchar('\n');
 }
