@@ -17,5 +17,5 @@ length++;
 
 putchar(s[length]);
 length--;
-putchar('\n');
+putchar(10);
 }
