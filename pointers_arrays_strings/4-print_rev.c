@@ -14,10 +14,8 @@ while (s[length] != '\0')
 {
 length++;
 }
-while (length >= 0)
-{
+
 putchar(s[length]);
 length--;
-}
 putchar('\n');
 }
