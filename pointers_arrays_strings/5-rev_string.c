@@ -2,23 +2,27 @@
 #include <stdio.h>
 #include <string.h>
 /**
- * print_rev - reverses a string
+ * rev_string - reverses a string
  * @s: read a string
  * Return: Nothing
  */
 
-void print_rev(char *s)
+void rev_string(char *s)
 {
-	int i = 0;
-	int len = 0;
-	char tmp;
+char *begin = s;
+char *finish = s;
+char temp;
 
-	while (s[len++])
-		i++;
-	for (i = 0; len < i / 2; len++)
-	{
-	tmp = s[len];
-	s[len] = s[i - len - 1];
-	s[i - len - 1] = tmp;
-	}
+while (*finish != '\0')
+finish++;
+finish--;
+
+while (begin < finish)
+{
+temp = *begin;
+*begin = *finish;
+*finish = temp;
+begin++;
+finish--;
+}
 }
