@@ -5,7 +5,8 @@
  * @str: sequence of characters terminated with a null character '\0'
  * Return: Nothing
  */
-void puts2(char *str);
+
+void puts2(char *str)
 {
 int i = 0;
 
