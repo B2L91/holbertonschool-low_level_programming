@@ -17,4 +17,3 @@ putchar(str[i]);
 i += 2;
 }
 }
-
