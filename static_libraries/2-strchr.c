@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <ctype.h>
 #include <string.h>
+#include <stddef.h>
 
 char *_strchr(char *s, char c)
 {
