@@ -4,7 +4,7 @@
  * _memset - fills memory with a constant byte.
  * @s: pointer toward memory area
  * @b: constant byte
- * @s: byte numbers
+ * @n: byte numbers to fill
  * Return: pointer to the memory area s
  */
 
