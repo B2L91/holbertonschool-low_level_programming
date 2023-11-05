@@ -1,21 +1,7 @@
-# Variables
-CC = gcc
-SRC = main.c utils.c gestion_fichiers.c
-OBJ = $(SRC:.c=.o)
-NAME = school
+CC=gcc
+SRC=main.c school.c
+OBJ=$(SRC;.c=.o)
+NAME=school
 
-# Règle par défaut (la règle "all")
-all: $(NAME)
-
-# Construire l'exécutable
-$(NAME): $(OBJ)
-	$(CC) -o $@ $^
-
-# Compiler les fichiers .c en fichiers .o
-%.o: %.c
-	$(CC) -c -o $@ $<
-
-# Nettoyer les fichiers objets et l'exécutable
-clean:
-	rm -f $(OBJ) $(NAME)
-
+all:$(OBJ)
+	$(CC) $(SRC) -o $(NAME)
