@@ -1,17 +1,18 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
  * create_array - creates an array of chars
  * @size: length of board
  * @c: character
- * Return:
+ * Return: NULL if size = 0 and a pointer to the array, or NULL if it fails
  */
 
 char *create_array(unsigned int size, char c)
 {
-	char *tab;
-	unsigned int i = 0;
+char *tab;
+unsigned int i = 0;
 
 	if (size == 0)
 {
@@ -24,8 +25,6 @@ char *create_array(unsigned int size, char c)
 	{
 	return (NULL);
 }
-
-
 	while (i < size)
 	{
 	tab[i] = c;
